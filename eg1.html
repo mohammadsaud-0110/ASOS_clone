@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API check</title>
+    <style>
+        .box{
+            width: 90%;
+            margin: 0px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
+
+<script>
+    const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '6943bf36eemsh4feaafa4a140795p1f9e32jsn0377bc6a4c61',
+		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
+	}
+};
+
+let alldata = [];
+fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4208&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US', options)
+	.then(response => response.json())
+	.then(res => {
+        console.log(res.products)
+        alldata = res.products;
+        localStorage.setItem("jeans",JSON.stringify(res.products));
+        // display(res.products)
+    })
+	.catch(err => console.error(err));
+
+    let box = document.querySelector(".box");
+    function display(alldata){
+
+        alldata.forEach((ele) => {
+            let card = document.createElement("div")
+            let name= document.createElement("h3");
+            name.textContent = ele.name;
+            let img = document.createElement("img");
+            img.setAttribute("src",`https://${ele.imageUrl}`);
+            card.append(img,name)
+            box.append(card)
+            });
+        
+    }
+
+
+    localStorage.setItem("shoes",JSON.stringify(alldata));
+</script>
