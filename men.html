@@ -6,45 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7c8095b40f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>men page</title>
     <style>
-       
-
-       .cont1{
-           cursor: pointer;
-           height: 600px;
+        .cont1 {
+            cursor: pointer;
+            height: 600px;
             width: 80%;
             /* border: 1px solid blue; */
             margin: auto;
             background-image: url("https://content.asos-media.com/-/media/homepages/mw/2022/december/26-gbl/hero/mw_global_make_moves_desktophero_1258x600v2.jpg")
+        }
 
-       }
-       .activeWear{
-           
-        margin-top: 30%;
-        margin-left: 40%;
-        width: 280px;
-        height: 70px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: 50px;
+        .activeWear {
 
-       }
-       .btnShop{
-        margin-top: 2%;
-        margin-left: 45%;
-        width: 180px;
-        height: 45px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-       }
+            margin-top: 30%;
+            margin-left: 40%;
+            width: 280px;
+            height: 70px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 50px;
 
-       .btnShop:hover{
-        color: white;
-        background-color: black;
-       }
+        }
+
+        .btnShop {
+            margin-top: 2%;
+            margin-left: 45%;
+            width: 180px;
+            height: 45px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btnShop:hover {
+            color: white;
+            background-color: black;
+        }
 
         .cont2 {
 
@@ -76,8 +80,20 @@
 
         }
 
-        .cont8{
-          
+        .asosPremier {
+            cursor: pointer;
+            height: 170px;
+            width: 100%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            text-align: center;
+            margin-bottom: 100px;
+            background-image: url("https://content.asos-media.com/-/media/homepages/unisex/homepages/2022/07_july/premier-re-brand/live-assets/desktop-banner-2880x320_compress.png")
+        }
+
+
+        .cont8 {
+
             height: 400px;
             width: 80%;
             /* border: 1px solid blue; */
@@ -86,23 +102,23 @@
             gap: 20px;
             text-align: left;
             margin-top: -50px;
-            
+
 
         }
 
-        .cont8h1{
-            
+        .cont8h1 {
+
             height: 100px;
             width: 100%;
             /* border: 1px solid green; */
             margin: auto;
             text-align: center;
-            
+
 
         }
 
-        .cont8>div{
-             height: 300px;
+        .cont8>div {
+            height: 300px;
             width: 100%;
             /* border: 1px solid red; */
             margin: auto;
@@ -111,7 +127,7 @@
         }
 
 
-        .cont9{
+        .cont9 {
 
             height: 300px;
             width: 45%;
@@ -120,7 +136,7 @@
             text-align: center;
             margin-top: -100px;
             line-height: 25px;
- 
+
         }
 
         #footer1 {
@@ -202,20 +218,69 @@
             color: rgb(131, 131, 226);
         }
 
-      
+
+        /* slide */
+
+        .styleFeed{
+            width: 100%;
+            height: 500px;
+            background-color: #9CF0E0;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+     
+        .carousel .thumb-wrapper {
+        
+            background: #fff;
+            text-align: center;
+            position: relative;
+            width: 250px;
+            height: 380px;
+            /* border: 1px solid green; */
+
+        }
+        .carousel .item .img-box {
+            height: 65%;
+            margin-bottom: 20px;
+            width: 100%;
+            position: relative;
+            /* border: 1px solid blue; */
+        }
+        .carousel .item img {
+            width: 150%;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            /* border: 1px solid red; */
+        }
+       
+        .carousel-indicators li {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+
+        }
+
+        .carousel-indicators li.active {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
     </style>
 </head>
 
 <body>
 
     <!-- container 1 -->
-    
+
     <div class="cont1">
         <div>
-       <button class="activeWear">Activewear</button>
+            <button class="activeWear">Activewear</button>
 
         </div>
-       <button class="btnShop">SHOP NOW</button>
+        <button class="btnShop">SHOP NOW</button>
     </div>
 
     <!-- container 2 -->
@@ -250,11 +315,194 @@
         </div>
 
     </div>
-     
+
+    <!-- slide -->
+    <div class="styleFeed">
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-12">
+                   
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <ol class="carousel-indicators" >
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/14-sat/activethumb.jpg?h=300&w=300&hash=34AEAE72ED0F527B1A6BF79498939E5E" class="img-fluid" alt="">
+                                            </div>
+                                            <h5>HOW WE'RE STYLING ACTIVEWEAR IN 2023</h5>
+                                            <p>Lunge-wear done right</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/13-fri/loungewear/thumbloungemw.jpg?h=300&w=300&hash=910BAA35C047F59E393A8AEB4B052A25" class="img-fluid"
+                                                    alt="">
+                                                  
+                                            </div>
+                                       
+                                            <h5>JAN-READY LOUNGEWEAR</h5>
+                                            <p>Did someone say Cozy-Boy Winter</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/13-fri/microsoftteams-image-(21).png?h=300&w=300&hash=72BC50AEDA387A6314866C6C621D3480" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>NEW-SEASON GLAM W/ BLACK PEPPA</h5>
+                                            <p>Not us getting ep 5!</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/08-sun/globes/donaldgloverthumbnail.jpg?h=300&w=300&hash=DD218B235671B40910BFCEB98546F2C8" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5> RED CARPET REPORT: GOLDEN GLOBES</h5>
+                                            <p>*Chef's kiss* menswear moments</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/06-fri/thumb.jpg?h=300&w=300&hash=B46BC175CDE16E0701F78E2DC4F4EE0D" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>HOW TO DO: MOTOCROSS</h5>
+                                            <p>Skkrt skkrt...</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2022/12/24-sat/thunmb.jpg?h=300&w=300&hash=06A55ADB3A5C9C077C91A4E1ACAC5CA9" class="img-fluid"
+                                                    alt="">
+                                            </div> 
+                                            <h5>FASHION TEAM TOP PICKS: NYE EDITION</h5>
+                                            <p>Best-dressed guest: ACHIEVED</p>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://images.asos-media.com/products/asos-4505-icon-training-t-shirt-with-quick-dry-in-red/203748107-1-red" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>HOW WE'RE STYLING ACTIVEWEAR IN 2023</h5>
+                                            <p>Lunge-wear done right</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/01-sun/trend-thumb.jpg?h=300&w=300&hash=92595D109063F185E1555FE937F8B158" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>THE HOTTEST TRENDS OF 2023</h5>
+                                                 <p>*immediately grabs notepad*</p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2022/11/13-sun/microsoftteams-image-(6).png?h=300&w=300&hash=AA334D597CA22ADB93C192F2735B842F" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>THE HOTTEST TRENDS OF 2023</h5>
+                                            <p>*immediately grabs notepad*</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2022/11/27/boots-thumb.jpg?h=300&w=300&hash=911D9804DE02905E1439A817EC2E9A03" class="img-fluid"
+                                                    alt="">
+                                            </div> 
+                                            <h5>THE HOTTEST TRENDS OF 2023</h5>
+                                            <p>*immediately grabs notepad*</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/14-sat/activewear-1.jpg?h=1100&w=870&la=en-US&hash=05199B1446FD834BB4EB555AC5157AD6" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>THE HOTTEST TRENDS OF 2023</h5>
+                                            <p>*immediately grabs notepad*</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            
+                                            <div class="img-box">
+                                                <img src="https://content.asos-media.com/-/media/images/articles/men/2023/01/14-sat/active-6.jpg?h=1100&w=870&la=en-US&hash=93AEEA5F6FFAE3C71AF247CB459A90D1" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <h5>THE HOTTEST TRENDS OF 2023</h5>
+                                            <p>*immediately grabs notepad*</p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                           
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <!-- asos premier -->
+    <div class="asosPremier">
+
+        <h1>asos premier</h1>
+        <h2>Unlimited free Next Day Delivery for a whole year for $24.99 </h2>
+        <p>Minimum spend and Ts&Cs apply</p>
+
+    </div>
+
     <!-- container 8 -->
 
-    <div >
-        <div  class="cont8h1">
+    <div>
+        <div class="cont8h1">
             <h1>
                 TOP MEN’S CATEGORIES
             </h1>
@@ -289,9 +537,9 @@
                 <p>Chukka Boots</p>
             </div>
         </div>
-           
-        
-       
+
+
+
     </div>
 
 
@@ -300,18 +548,19 @@
     <div class="cont9">
         <p>
             Chilly days ahead – time to layer up. Your one-stop destination for everything men’s fashion, trust
-             ASOS to bring the goods. We’re talking chunky knits, sweaters and cardis in this season’s must-have color palette,
-              boxy overshirts for a smart-casj vibe, and *the* hottest throw-on jackets and structured coats 
-              (think puffers, camel wool dusters and classic trenches, to name a few). Brave the elements in 
-              pull-on leather Chelsea boots, rough 'n' ready lace-up worker styles and the perfect low-key sneaks. 
-              Finish off your cold-weather 'fits in cozy accessories, with ribbed fisherman beanies,
-               wool-mix scarves and faux-leather gloves as standard. Biting temps playing havoc with your skin? 
-                We gotchu. Scroll Face + Body for soothing skincare from top brands like The Ordinary, Bulldog and 
-                REN for nourishing products guaranteed to give you back your glow. Winter, we're ready for ya.
+            ASOS to bring the goods. We’re talking chunky knits, sweaters and cardis in this season’s must-have color
+            palette,
+            boxy overshirts for a smart-casj vibe, and *the* hottest throw-on jackets and structured coats
+            (think puffers, camel wool dusters and classic trenches, to name a few). Brave the elements in
+            pull-on leather Chelsea boots, rough 'n' ready lace-up worker styles and the perfect low-key sneaks.
+            Finish off your cold-weather 'fits in cozy accessories, with ribbed fisherman beanies,
+            wool-mix scarves and faux-leather gloves as standard. Biting temps playing havoc with your skin?
+            We gotchu. Scroll Face + Body for soothing skincare from top brands like The Ordinary, Bulldog and
+            REN for nourishing products guaranteed to give you back your glow. Winter, we're ready for ya.
         </p>
     </div>
     <hr>
-    
+
 
 
     <!-- footer -->
