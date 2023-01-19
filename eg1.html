@@ -34,31 +34,31 @@
 };
 
 let alldata = [];
-fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4208&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US', options)
+fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4210&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US', options)
 	.then(response => response.json())
 	.then(res => {
         console.log(res.products)
         alldata = res.products;
-        localStorage.setItem("jeans",JSON.stringify(res.products));
+        localStorage.setItem("accessories",JSON.stringify(res.products));
         // display(res.products)
     })
 	.catch(err => console.error(err));
 
-    let box = document.querySelector(".box");
-    function display(alldata){
+    // let box = document.querySelector(".box");
+    // function display(alldata){
 
-        alldata.forEach((ele) => {
-            let card = document.createElement("div")
-            let name= document.createElement("h3");
-            name.textContent = ele.name;
-            let img = document.createElement("img");
-            img.setAttribute("src",`https://${ele.imageUrl}`);
-            card.append(img,name)
-            box.append(card)
-            });
+    //     alldata.forEach((ele) => {
+    //         let card = document.createElement("div")
+    //         let name= document.createElement("h3");
+    //         name.textContent = ele.name;
+    //         let img = document.createElement("img");
+    //         img.setAttribute("src",`https://${ele.imageUrl}`);
+    //         card.append(img,name)
+    //         box.append(card)
+    //         });
         
-    }
+    // }
 
 
-    localStorage.setItem("shoes",JSON.stringify(alldata));
+    // localStorage.setItem("shoes",JSON.stringify(alldata));
 </script>
