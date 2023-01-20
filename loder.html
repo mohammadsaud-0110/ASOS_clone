@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- <style>:root {
+        --b: #000000;
+        --w: #ffeb3b;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--b);
+        animation: spin 2s cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    body:before, body:after {
+        content: "";
+        position: absolute;
+        width: 50vmin;
+        height: 25vmin;
+        margin-top: -25vmin;
+        border-radius: 50% 50% 0% 100% / 100% 100% 0% 0%;
+        background: 
+            radial-gradient(circle at 50% 100%, var(--b) 1vmin, #fff0 calc(1vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--b) 1vmin, #fff0 calc(1vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--b) 1vmin, #fff0 calc(1vmin + 1px)),
+            conic-gradient(from 90deg at 50% 100%, var(--b) 0 50.5%, #fff0  51.5%),		
+            radial-gradient(circle at 47% 100%, var(--b) 3vmin, #fff0 calc(3vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--w) 5vmin, #fff0 calc(5vmin + 1px)),
+            radial-gradient(circle at 47% 100%, var(--b) 7vmin, #fff0 calc(7vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--w) 9vmin, #fff0 calc(9vmin + 1px)),
+            radial-gradient(circle at 47% 100%, var(--b) 11vmin, #fff0 calc(11vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--w) 13vmin, #fff0 calc(13vmin + 1px)),
+            radial-gradient(circle at 47% 100%, var(--b) 15vmin, #fff0 calc(15vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--w) 17vmin, #fff0 calc(17vmin + 1px)),
+            radial-gradient(circle at 47% 100%, var(--b) 19vmin, #fff0 calc(19vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--w) 21vmin, #fff0 calc(21vmin + 1px)),
+            radial-gradient(circle at 47% 100%, var(--b) 23vmin, #fff0 calc(23vmin + 1px)),
+            radial-gradient(circle at 50% 100%, var(--w) 25vmin, #fff0 calc(25vmin + 1px)),
+            var(--b);
+    }
+    
+    body:after {
+        transform: rotate(180deg);
+        margin-top: 25vmin;
+    }</style> -->
+    <style>
+
+        body{
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loader {
+    width: 6em;
+    height: 6em;
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loader .face {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    animation: animate023845 3s
+     linear infinite;
+  }
+  
+  .loader .face:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 98, 0);
+    border-color: currentColor 
+    transparent transparent currentColor;
+    border-width: 0.2em 0.2em 0em 0em;
+    --deg: -45deg;
+    animation-direction: normal;
+  }
+  
+  .loader .face:nth-child(2) {
+    width: 70%;
+    height: 70%;
+    color: rgb(255, 0, 255);
+    border-color: currentColor 
+    currentColor transparent transparent;
+    border-width: 0.2em 0em 0em 0.2em;
+    --deg: -135deg;
+    animation-direction: reverse;
+  }
+  
+  .loader .face .circle {
+    position: absolute;
+    width: 50%;
+    height: 0.1em;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    transform: rotate(var(--deg));
+    transform-origin: left;
+  }
+  
+  .loader .face .circle::before {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 2em,
+        0 0 4em,
+        0 0 6em,
+        0 0 8em,
+        0 0 10em,
+        0 0 0 0.5em
+    rgba(255, 255, 0, 0.1);
+  }
+  
+  @keyframes animate023845 {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="face">
+            <div class="circle"></div>
+        </div>
+        <div class="face">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+<script>
+    let target = JSON.parse(localStorage.getItem('loder'))
+    // console.log(target);
+    setTimeout(()=>{
+        window.location.href=`./${target}`
+    },800)
+</script>
+</html>

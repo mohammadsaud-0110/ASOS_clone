@@ -14,8 +14,8 @@
       <div class="navbar-t">
          <div class="left">
             <div> <img src="./img/WhatsApp Image 2023-01-18 at 12.21.39 PM.jpeg" alt=""> </div>
-            <div> <a href="./women.html"><button class="dropbtn">WOMEN</button> </a></div>
-            <div><a href="./men.html"><button class="dropbtn">MEN</button></a> </div>
+            <div> <button class="dropbtn" id="s">WOMEN</button> </div>
+            <div><button class="dropbtn" id="r">MEN</button></div>
 
          </div>
          <div class="middle"><input type="text" placeholder="Search for items and brands"></div>
@@ -27,7 +27,7 @@
 
          </div>
       </div>
-      <div class="navbar-b">
+      <!-- <div class="navbar-b">
          <div class="mini2">
             <div class="dropdown">
                <button class="dropbtn">Sale</button>
@@ -204,22 +204,21 @@
 
 
          </div>
-      </div>
+      </div> -->
    </div>
 
-
+   <!-- <a href="./women.html"><button class="dropbtn">WOMEN</button> </a> -->
+   <!-- <a href="./men.html"><button class="dropbtn">MEN</button></a> -->
 
    <div class="top1">
-      <div class="top1a">
-         <p>UP TO 30% OFF FRESH FAVES!INCL. SHOES, TEES, COATS & MORE Limited time only. Selected styles marked down as
-            shown.</p>
-      </div>
-      <div class="top1b">
-         <p> FREE WORLDWIDE DELIVERY</p>
-
-
-      </div>
-
+      <div id="aaa"> <button style="--c: #373B44;--b: 5px;--s:12px">WOMEN</button>
+        </div>
+      <div id="bbb">
+         UP TO 50% OFF!
+         <br>
+         Use code: RABBIT</div>
+      <div id="ccc"> <button style="--c: #373B44;--b: 5px;--s:12px">MEN</button>
+        </div>
 
    </div>
 
@@ -229,7 +228,7 @@
 
 
 
-   <div class="top4">
+   <!-- <div class="top4">
       <div class="top4-a"><img
             src="https://images.meesho.com/images/products/54921969/xg19v_400.jpg"
             alt="">
@@ -264,7 +263,7 @@
          </h1>
          <p> Sweet styles you'll save on</p>
 
-      </div>
+      </div> -->
    </div>
    <div id="b">
       <div><img src="https://cdn-icons-png.flaticon.com/128/3670/3670032.png" alt=""></div>
@@ -277,38 +276,48 @@
       <div><img src="https://cdn-icons-png.flaticon.com/128/147/147258.png" alt=""></div>
       <div><img src="https://cdn-icons-png.flaticon.com/128/121/121877.png" alt=""></div>
 
-  </div>
-  <div id="c">
-   <div>
-       <h3>HELP & INFORMATION</h3>
-       <p>Help</p>
-       <p>Track Order</p>
-       <p>Delivery & returns</p>
-       <p> Sitemap</p>
    </div>
-   <div>
-       <h3>ABOUT ASOS</h3>
-       <p>About us</p>
-       <p> Careers at ASOS</p>
-       <p>Corporate responsibility</p>
-       <p>Investors' site</p>
-   </div>
-   <div>
-       <h3>MORE FROM ASOS</h3>
-       <p> Mobile and ASOS apps</p>
-       <p> ASOS Marketplace</p>
-       <p>Gift vouchers</p>
-       <p> Black Friday</p>
-   </div>
-   <div>
-       <h3>SHOPPING FROM:</h3>
-       <p>You're in India</p>
-       <p>CHANGE</p>
+   <div id="c">
+      <div>
+         <h3>HELP & INFORMATION</h3>
+         <p>Help</p>
+         <p>Track Order</p>
+         <p>Delivery & returns</p>
+         <p> Sitemap</p>
+      </div>
+      <div>
+         <h3>ABOUT ASOS</h3>
+         <p>About us</p>
+         <p> Careers at ASOS</p>
+         <p>Corporate responsibility</p>
+         <p>Investors' site</p>
+      </div>
+      <div>
+         <h3>MORE FROM ASOS</h3>
+         <p> Mobile and ASOS apps</p>
+         <p> ASOS Marketplace</p>
+         <p>Gift vouchers</p>
+         <p> Black Friday</p>
+      </div>
+      <div>
+         <h3>SHOPPING FROM:</h3>
+         <p>You're in India</p>
+         <p>CHANGE</p>
+
+      </div>
 
    </div>
-
-</div>
 
 </body>
 
 </html>
+<script>
+   document.getElementById("s").addEventListener('click',()=>{
+      localStorage.setItem('loder',JSON.stringify('women.html'))
+      window.location.href="./loder.html"
+   })
+   document.getElementById("r").addEventListener('click',()=>{
+      localStorage.setItem('loder',JSON.stringify('men.html'))
+      window.location.href="./loder.html"
+   })
+</script>
