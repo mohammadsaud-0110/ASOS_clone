@@ -1,0 +1,21 @@
+GET https://63ca4b894f53a00420202b84.mockapi.io/allusers
+
+####
+
+
+
+POST  https://63ca4b894f53a00420202b84.mockapi.io/allusers
+Content-Type: application/json
+
+  {
+    "first-name": "Md",
+    "last-name": "S",
+    "email": "mds1@gmail.com",
+    "password": "0000",
+    "gender": "Male",
+    "d-o-b": "0-0-0"
+  }
+
+
+###
+DELETE  https://63cab8b14f53a00420296f33.mockapi.io/jeans/2
