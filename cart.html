@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c8095b40f.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        /* top div */
+
+        .topdiv {
+            height: 300px;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        /* footer */
+
+        #footer1 {
+            width: 70%;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #575454;
+        }
+
+        #footer3+div {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+        #footer1>div {
+            width: 100%;
+        }
+
+        .card1 {
+            font-size: 14px;
+            font-weight: bold;
+            width: fit-content;
+
+            margin-left: 40px;
+        }
+
+        .mainCart {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            height: auto;
+            width: 100%;
+            /* border: 1px solid green; */
+            background-color: #eeeeee;
+
+
+        }
+
+        .cartPrice {
+            /* border: 1px solid rgb(0, 51, 255); */
+            background-color: white;
+            width: 25%;
+            padding-left: 50px;
+            height: 400px;
+
+        }
+
+        .leftCart {
+            height: 500px;
+            width: 60%;
+        }
+
+        .cartDiv {
+            /* border: 1px solid red; */
+            height: 80px;
+            background-color: white;
+
+            display: flex;
+            justify-content: space-around
+        }
+
+        .cartBtn {
+            background-color: green;
+            border: none;
+            width: 300px;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        #footer2 {
+            width: 83%;
+            height: 40px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666666;
+        }
+
+        #logo1 {
+            display: flex;
+            column-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 40px;
+            font-size: 14px;
+            width: fit-content;
+        }
+
+        #logo1:hover {
+            cursor: pointer;
+            color: rgb(145, 145, 227);
+        }
+
+        #logo1 img:hover {
+            border: 1px solid rgb(141, 141, 204);
+            border-radius: 50%;
+        }
+
+        #footer3 {
+            width: 45%;
+            height: 40px;
+            align-items: center;
+            font-size: 27px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #footer1>div ul:hover {
+            cursor: pointer;
+            color: rgb(138, 138, 222)
+        }
+
+        #footer2 p:hover {
+            cursor: pointer;
+            color: rgb(131, 131, 226);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- top div -->
+    <div class="mainCart">
+        <div class="leftCart">
+            <div class="cartDiv">
+                <h2>MY BAG</h2>
+                <p style="padding-top: 10px;">Items are reserved for 60 minutes</p>
+            </div>
+        </div>
+
+
+
+        <div class="cartPrice">
+            <h2>TOTAL</h2>
+            <hr>
+            <div>
+                <h3>Sub-Total</h3>
+                <h3>Shipping</h3>
+                <h3>Sale Tax</h3>
+            </div>
+            <button class="cartBtn">CHECKOUT</button>
+            <h3>WE ACCEPT :</h3>
+            <div id="footer3" style="gap: 5px; margin-left: 0px;">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+            </div>
+            <p>Got a discount code? Add it in the next step.</p>
+        </div>
+
+    </div>
+
+    <!-- 
+   <div class="topdiv">
+    <h2>Your bag is empty</h2>
+    <p>But the items below were moved to your Saved Items -</p>
+    <p>so you can shop them again if you like! Why?</p>
+   </div> -->
+
+
+    <!-- footer -->
+
+
+
+    <div>
+        <div id="footer3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-snapchat"></i>
+            <p>|</p>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+        </div>
+        <div style="background-color: #eeeeee;">
+            <div id="footer1">
+                <div>
+                    <p class="card1">HELP AND INFORMATION</p>
+                    <ul>Help</ul>
+                    <ul>Track order</ul>
+                    <ul>Delivery & returns</ul>
+                    <ul>ASOS Premier</ul>
+                    <ul>15% Student Discount</ul>
+                    <ul>Sitemap</ul>
+                </div>
+                <div>
+                    <p class="card1">ABOUT ASOS</p>
+                    <ul>About us</ul>
+                    <ul>Carrers at ASOS</ul>
+                    <ul>Corporate responsibility</ul>
+                    <ul>Investor's site</ul>
+                </div>
+                <div>
+                    <p class="card1">MORE FROM ASOS</p>
+                    <ul>Mobile and ASOS apps</ul>
+                    <ul>ASOS Marketplace</ul>
+                    <ul>E-gift cards</ul>
+                    <ul>Black Friday</ul>
+                    <ul>Refer A Friend</ul>
+                </div>
+                <div>
+                    <p class="card1"> SHOPPING FROM :</p>
+                    <div id="logo1">
+                        <p>You're in </p>
+                        <img style=" height: 20px;" src="https://assets.asosservices.com/storesa/images/flags/us.png"
+                            alt="">
+                        <p><b>| CHANGE</b> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#dddddd ;">
+        <div id="footer2">
+            <div>
+                <p>© 2022 ASOS</p>
+            </div>
+            <div style="display:flex; column-gap: 10px;">
+                <P>Privacy & Cookies |</P>
+                <p>Ts&Cs |</p>
+                <p>Accessibility</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

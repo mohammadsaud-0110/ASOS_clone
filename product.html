@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c8095b40f.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
+    <style>
+        /* product top  */
+       
+        #top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 20px 0px 0px;
+           
+        }
+        #top>p,span,h1{
+            margin-top: 20px;
+            
+        }
+
+      #selectDiv{
+            background-color: rgb(238,238,238);
+            display: grid;
+            grid-template-columns: repeat(5,250px);
+            grid-template-rows: auto;
+            justify-content: center;
+            margin: auto;
+            gap: 5px;
+
+        }
+
+        #selectDiv>div>select{
+            background-color: rgb(238,238,238);
+            padding: 3px 20px 3px 6px;
+            color: #666;
+            height: 40px;
+            border: 1px  solid #ddd;
+            font-size: 16px;
+            width: 230px;
+            margin-left: 14px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+        }
+        #selectDiv>div>select:hover{
+            color: rgb(57, 57, 211);
+        }
+        #selectDiv>select>option{
+            
+                background-color: white;
+                border: 1px solid #ddd;
+                padding:10px;
+                border-right: none;
+                color: #666;
+                font-size: 16px;
+                font-weight: 400;
+                height: 42px;
+                text-align: left;
+                width: 100%;
+             
+   
+        }
+
+     
+       /* footer */
+
+       #footer1 {
+            width: 70%;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #575454;
+        }
+
+        #footer3+div {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+        #footer1>div {
+            width: 100%;
+        }
+
+        .card1 {
+            font-size: 14px;
+            font-weight: bold;
+            width: fit-content;
+            margin-left: 40px;
+        }
+
+
+        #footer2 {
+            width: 83%;
+            height: 40px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #666666;
+            font-family: sans-serif;
+        }
+
+        #logo1 {
+            display: flex;
+            column-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 40px;
+            font-size: 14px;
+            width: fit-content;
+        }
+
+        #logo1:hover {
+            cursor: pointer;
+            color: rgb(145, 145, 227);
+        }
+
+        #logo1 img:hover {
+            border: 1px solid rgb(141, 141, 204);
+            border-radius: 50%;
+        }
+
+        #footer3 {
+            width: 45%;
+            height: 40px;
+            align-items: center;
+            font-size: 27px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #footer1>div ul:hover {
+            cursor: pointer;
+            color: rgb(138, 138, 222)
+        }
+
+        #footer2 p:hover {
+            cursor: pointer;
+            color: rgb(131, 131, 226);
+        }
+
+    </style>
+</head>
+<body>
+    
+<!-- product top -->
+
+
+<div id="top">
+    <h1>
+        V-day goals
+    </h1>
+</div>
+
+
+<div id="selectDiv">
+<div>
+    <select name="sort" id="sort">
+        <option value="sort">Sort</option>
+        <option value="recommeded">Recommended</option>
+        <option value="What's new">What's New</option>
+        <option value="high to low">Price high to low</option>
+        <option value="low to high">Price low to high</option>
+    </select>
+</div>
+
+<div>
+  <select name="category" id="category">
+    <option value="product type">Product Type</option>
+<option value="tops">Tops</option>
+<option value="jeans & trousers">Jeans % Trousers</option>
+<option value="outerwear">Outerwear</option>
+<option value="knitwear & sweats">Knitwear & Sweats</option>
+<option value="accessories">Accessories</option>
+<option value="footwear">Footwear</option>
+<option value="suits & tailoring">Suits & Tailoring</option>
+
+  </select>
+
+</div>
+
+<div>
+    <select name="product type" id="product type">
+
+        <option value="style">Style</option>
+     <option value="T-shirts">T-shirts</option>
+     <option value="jeans">Jeans</option>
+     <option value="shirts">Shirts</option>
+     <option value="jackets">Jackets</option>
+     <option value="pants">Pants</option>
+     <option value="sweatshirts">Sweatshirts</option>
+     <option value="polo Shirts">Polo Shirts</option>
+     <option value="coats">Coats</option>
+     <option value="belts">Belts</option>
+
+    </select>
+</div>
+
+
+<!-- <div>
+  <select name="style" id="style">
+    <option value="color">col</option>
+   <option value="oversized">Oversized</option>
+
+  </select>
+
+</div> -->
+
+
+<div>
+<select name="color" id="color">
+    <option value="color">Color</option>
+    <option value="brown">Brown</option>
+    <option value="navy">Navy</option>
+    <option value="neutral">Neutral</option>
+    <option value="green">Green</option>
+    <option value="gold">Gold</option>
+    <option value="grey">Grey</option>
+    <option value="black">Black</option>
+</select>
+</div>
+
+<div>
+    <select name="brand" id="brand">
+        <option value="brand">Brand</option>
+     <option value="ASOS DESIGN">ASOS DESIGN</option>
+     <option value="aaron wallace">Aaron Wallace</option>
+     <option value="adidas performance">adidas performance</option>
+     <option value="barber Pro">Barber Pro</option>
+     <option value="bershka">Bershka</option>
+
+    </select>
+</div>
+
+
+<div>
+    <select name="body fit" id="body fit">
+        <option value="body fit">Body Fit</option>
+        <option value="main collection">Main Collection</option>
+        <option value="plus size">Plus Size</option>
+        <option value="tall">Tall</option>
+    </select>
+</div>
+
+
+<div>
+    <select name="size" id="size">
+        <option value="size">Size</option>
+        <option value="US 3">US 3</option>
+        <option value="US 3.5">US 3.5</option>
+        <option value="US 4">US 4</option>
+        <option value="US 5">US 5</option>
+        <option value="US 5.5">US 5.5</option>
+    </select>
+</div>
+
+
+<div>
+    <select name="price range" id="price range">
+        <option value="price range">Price Range</option>
+        <option value="">
+        </option>
+    
+    </select>
+</div>
+
+</div>
+
+
+<!-- footer  -->
+
+
+<div>
+    <div id="footer3">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-snapchat"></i>
+        <p>|</p>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+    </div>
+    <div style="background-color: #eeeeee;">
+        <div id="footer1">
+            <div>
+                <p class="card1">HELP AND INFORMATION</p>
+                <ul>Help</ul>
+                <ul>Track order</ul>
+                <ul>Delivery & returns</ul>
+                <ul>ASOS Premier</ul>
+                <ul>15% Student Discount</ul>
+                <ul>Sitemap</ul>
+            </div>
+            <div>
+                <p class="card1">ABOUT ASOS</p>
+                <ul>About us</ul>
+                <ul>Carrers at ASOS</ul>
+                <ul>Corporate responsibility</ul>
+                <ul>Investor's site</ul>
+            </div>
+            <div>
+                <p class="card1">MORE FROM ASOS</p>
+                <ul>Mobile and ASOS apps</ul>
+                <ul>ASOS Marketplace</ul>
+                <ul>E-gift cards</ul>
+                <ul>Black Friday</ul>
+                <ul>Refer A Friend</ul>
+            </div>
+            <div>
+                <p class="card1"> SHOPPING FROM :</p>
+                <div id="logo1">
+                    <p>You're in </p>
+                    <img style=" height: 20px;" src="https://assets.asosservices.com/storesa/images/flags/us.png"
+                        alt="">
+                    <p><b>| CHANGE</b> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color:#dddddd ;">
+    <div id="footer2">
+        <div>
+            <p>© 2022 ASOS</p>
+        </div>
+        <div style="display:flex; column-gap: 10px;">
+            <P>Privacy & Cookies |</P>
+            <p>Ts&Cs |</p>
+            <p>Accessibility</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
