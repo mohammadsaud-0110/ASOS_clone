@@ -1,120 +1,125 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-body{
-    background-color: #eeeeee;
+body {
+  background-color: #f1f1f1;
 }
-.contener{
-    border: solid red 0px;
-    text-align: center;
-}
-
-img{
-    width: 150px;  
-    border-radius: 10px;
-    margin: 2rem;
+.contener {
+  border: solid red 0px;
+  text-align: center;
 }
 
-.box{
-    width: 665px;
-    margin: auto;
-    border: solid red 0px;
-    background-color: #ffffff;
-    padding-bottom: 20px;
+img {
+  width: 400px;
+  border-radius: 10px;
+  margin: 2rem;
 }
 
-.js{
-    border: solid red 0px;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2rem;
+.box {
+  width: 665px;
+  margin: auto;
+  border: solid red 0px;
+  background-color: #ffffff;
+  padding-bottom: 20px;
 }
 
-#join{
-    height: 100%;
-    width: 47%;
-    background-color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: solid
+.js {
+  border: solid red 0px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
 
+#join {
+  height: 100%;
+  width: 47%;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid;
 }
-#sign{
-    height: 100%;
-    width: 47%;
-    background-color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: solid;
+#join:hover{
+  cursor: pointer;
 }
-h2{
-    margin: 2rem;
+#sign {
+  height: 100%;
+  width: 47%;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid;
 }
-.gaf{
-    border: solid red 0px;
-    width: 90%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-bottom: 2rem;
+#sign:hover{
+  cursor: pointer;
 }
-.gaf>div{
-    border: solid black 2px;
-    border-color: rgb(203, 201, 223);
-    display: flex;
-    height: 100%;
-    width: 32%;
-    background-color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    align-items: center;
+h2 {
+  margin: 2rem;
 }
-.gaf>div>h3{
-    font-size: 17px;
+.gaf {
+  border: solid red 0px;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 2rem;
 }
-.gaf>div>img{
-    width: 20px;
+.gaf > div {
+  border: solid black 2px;
+  border-color: rgb(203, 201, 223);
+  display: flex;
+  height: 100%;
+  width: 32%;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
 }
-.sd>p{
-    font-size: 19px;
+.gaf > div > h3 {
+  font-size: 17px;
 }
-#h2{
-    margin: 3rem;
+.gaf > div > img {
+  width: 20px;
 }
-.inputs{
-    border: solid red 0px;
-    width: 400px;
-    margin: auto;
-    text-align: left;
+.sd > p {
+  font-size: 19px;
 }
-.inputs>input{
-    width: 100%;
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+#h2 {
+  margin: 3rem;
 }
-#rink{
-    font-size: 15px;
-    color: #767676;
-    margin-bottom: 25px;
+.inputs {
+  border: solid red 0px;
+  width: 400px;
+  margin: auto;
+  text-align: left;
 }
-.ft{
-    font-weight: bold;
-    color: #767676;
+.inputs > input {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-#gen{
-    margin-top: 15px;
-    margin-bottom: 20px;
+#rink {
+  font-size: 15px;
+  color: #767676;
+  margin-bottom: 25px;
 }
-#wom{
-    margin-left: 17px;
-    margin-right: 20px;
+.ft {
+  font-weight: bold;
+  color: #767676;
 }
-#men{
-    margin-left: 17px;
+#gen {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#wom {
+  margin-left: 17px;
+  margin-right: 20px;
+}
+#men {
+  margin-left: 17px;
 }
 
 /* ------------- */
@@ -127,7 +132,7 @@ h2{
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
@@ -149,16 +154,23 @@ h2{
 
 .btn:hover,
 .btn:focus {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /* ------------- */
 
-.policy{
-    margin: 20px;
+.policy {
+  margin: 20px;
 }
-.policy>a{
-    color: black;
-    
+.policy > a {
+  color: black;
 }
 
+#form2{
+  margin-top: 40px;
+}
+
+.gaf>div:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
