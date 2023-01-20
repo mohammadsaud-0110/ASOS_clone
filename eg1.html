@@ -25,24 +25,24 @@
 </html>
 
 <script>
-    const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '6943bf36eemsh4feaafa4a140795p1f9e32jsn0377bc6a4c61',
-		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
-	}
-};
+//     const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '6943bf36eemsh4feaafa4a140795p1f9e32jsn0377bc6a4c61',
+// 		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
+// 	}
+// };
 
-let alldata = [];
-fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4210&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US', options)
-	.then(response => response.json())
-	.then(res => {
-        console.log(res.products)
-        alldata = res.products;
-        localStorage.setItem("accessories",JSON.stringify(res.products));
-        // display(res.products)
-    })
-	.catch(err => console.error(err));
+// let alldata = [];
+// fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4210&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US', options)
+// 	.then(response => response.json())
+// 	.then(res => {
+//         console.log(res.products)
+//         alldata = res.products;
+//         localStorage.setItem("accessories",JSON.stringify(res.products));
+//         // display(res.products)
+//     })
+// 	.catch(err => console.error(err));
 
     // let box = document.querySelector(".box");
     // function display(alldata){
@@ -61,4 +61,75 @@ fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryI
 
 
     // localStorage.setItem("shoes",JSON.stringify(alldata));
+
+
+let allapi = JSON.parse(localStorage.getItem("jeans")) || [];
+// fetch("https://fashionista-server.onrender.com/jeans")
+// .then((res)=>{ return res.json(); })
+// .then((data)=>{ console.log(data.length);
+//     allapi = data;
+//     for(let i=0;i<allapi.length;i++){
+    
+//     let obj={
+//         "name": `${allapi[i].name}`,
+//         "image": `${allapi[i].imageUrl}`,
+//         "price": +(allapi[i].price.current.value),
+//         "color": `${allapi[i].colour}`,
+//         "brand": `${allapi[i].brandName}`
+//     }
+//     // register(obj);  
+//     // displayData(obj);
+//     console.log(obj);
+//     }
+//  });
+// console.log(p)
+// let p1 = await p.then((res)=>{ res.json() });
+// console.log(p1)
+// let x = 4;
+// console.log(allapi.length);
+for(let i=0;i<allapi.length;i++){
+    
+    let obj={
+        "name": `${allapi[i].name}`,
+        "image": `${allapi[i].imageUrl}`,
+        "price": +(allapi[i].price.current.value),
+        "color": `${allapi[i].colour}`,
+        "brand": `${allapi[i].brandName}`
+    }
+    register(obj);  
+    // displayData(obj);
+    // console.log(i+1,": ");
+    // console.log(obj);
+}
+// let pobj = {
+//         "name": "Walk London sean chunky chelsea boots in brown leather",
+//         "image": "images.asos-media.com/products/walk-london-sean-chunky-chelsea-boots-in-brown-leather/202728172-1-brown",
+//         "price": 100,
+//         "color": "BROWN",
+//         "brand": "WALK LONDON"
+// }
+// register(pobj);
+
+// function displayData(obj){
+//     console.log(obj);
+// }
+async function register(obj){
+// function register(obj,x){
+        let res=await fetch(`https://63cab8b14f53a00420296f33.mockapi.io/jeans` ,{
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(obj)
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+        }).catch((err)=>{
+            alert(err)
+        })
+}
+
 </script>
