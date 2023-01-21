@@ -19,12 +19,23 @@
 </head>
 <body>
     <div class="box">
-
+        <form action="">
+            <input type="text" id="t" required>
+            <input type="submit">
+        </form>
+        
     </div>
 </body>
 </html>
 
 <script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        let msg = document.querySelector("#t").value;
+        console.log(msg)
+    })
+
 //     const options = {
 // 	method: 'GET',
 // 	headers: {
@@ -62,13 +73,14 @@
 
     // localStorage.setItem("shoes",JSON.stringify(alldata));
 
-let allapi = [];
+// let allapi = [];
 // let allapi = JSON.parse(localStorage.getItem("accessories")) || [];
-fetch("https://63cab8b14f53a00420296f33.mockapi.io/accessories")
-.then((res)=>{ return res.json(); })
-.then((data)=>{ console.log(data.length);
-    allapi = data;
-    for(let i=0;i<allapi.length;i++){
+// fetch("https://63cab8b14f53a00420296f33.mockapi.io/accessories")
+// .then((res)=>{ return res.json(); })
+// .then((data)=>{ console.log(data.length);
+//     allapi = data;
+//     displayfirst(allapi)
+    // for(let i=0;i<allapi.length;i++){
     
 //     // let obj={
 //     //     "name": `${allapi[i].name}`,
@@ -79,16 +91,19 @@ fetch("https://63cab8b14f53a00420296f33.mockapi.io/accessories")
 //     // }
 // //     // register(obj);  
 // //     // displayData(obj);
-    console.log(allapi[i]);
-    }
- });
+    // console.log(allapi[i]);
+    // }
+//  });
 // console.log(p)
 // let p1 = await p.then((res)=>{ res.json() });
 // console.log(p1)
 // let x = 4;
 // console.log(allapi.length);
-// for(let i=0;i<allapi.length;i++){
-    
+function displayfirst(allapi){
+
+
+for(let i=0;i<6;i++){
+    console.log(allapi[i]);
 //     let obj={
 //         "name": `${allapi[i].name}`,
 //         "image": `${allapi[i].imageUrl}`,
@@ -100,7 +115,8 @@ fetch("https://63cab8b14f53a00420296f33.mockapi.io/accessories")
 //     // displayData(obj);
 //     // console.log(i+1,": ");
 //     console.log(obj);
-// }
+}
+}
 // let pobj = {
 //         "name": "Walk London sean chunky chelsea boots in brown leather",
 //         "image": "images.asos-media.com/products/walk-london-sean-chunky-chelsea-boots-in-brown-leather/202728172-1-brown",
