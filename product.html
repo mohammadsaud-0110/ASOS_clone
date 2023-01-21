@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <script src="https://kit.fontawesome.com/7c8095b40f.js" crossorigin="anonymous"></script>
 
     <title>Document</title>
@@ -151,6 +151,49 @@
             color: rgb(131, 131, 226);
         }
 
+        #product_data{
+            width: 800px;
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            
+            grid-template-columns: repeat(4,300px);
+            justify-content: center;
+            margin: auto;
+            gap: 25px;
+            margin-top: 15px;
+        }
+        #product_data>div>img{
+           width: 100%;
+           height: 360px;
+        }
+        #product_data>div{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        button {
+            /* padding: 15px 25px; */
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            /* border-radius: 15px;
+            box-shadow: 0 4px #999; */
+        }
+
+        button:hover {background-color: #3e8e41}
+
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+
+
     </style>
 </head>
 <body>
@@ -194,7 +237,7 @@
 <div>
     <select name="product type" id="product type">
 
-        <option value="style">Style</option>
+    <option value="style">Style</option>
      <option value="T-shirts">T-shirts</option>
      <option value="jeans">Jeans</option>
      <option value="shirts">Shirts</option>
@@ -235,7 +278,7 @@
 <div>
     <select name="brand" id="brand">
         <option value="brand">Brand</option>
-     <option value="ASOS DESIGN">ASOS DESIGN</option>
+     <option value="FASHIONISTA DESIGN">FASHIONISTA DESIGN</option>
      <option value="aaron wallace">Aaron Wallace</option>
      <option value="adidas performance">adidas performance</option>
      <option value="barber Pro">Barber Pro</option>
@@ -278,7 +321,7 @@
 
 </div>
 
-<!-------------------------------- div for appending the products ----------------->
+
 <!-- footer  -->
 
 
@@ -301,21 +344,21 @@
                 <ul>Help</ul>
                 <ul>Track order</ul>
                 <ul>Delivery & returns</ul>
-                <ul>ASOS Premier</ul>
+                <ul>FASHIONISTA Premier</ul>
                 <ul>15% Student Discount</ul>
                 <ul>Sitemap</ul>
             </div>
             <div>
-                <p class="card1">ABOUT ASOS</p>
+                <p class="card1">ABOUT FASHIONISTA</p>
                 <ul>About us</ul>
-                <ul>Carrers at ASOS</ul>
+                <ul>Carrers at FASHIONISTA</ul>
                 <ul>Corporate responsibility</ul>
                 <ul>Investor's site</ul>
             </div>
             <div>
-                <p class="card1">MORE FROM ASOS</p>
-                <ul>Mobile and ASOS apps</ul>
-                <ul>ASOS Marketplace</ul>
+                <p class="card1">MORE FROM FASHIONISTA</p>
+                <ul>Mobile and FASHIONISTA apps</ul>
+                <ul>FASHIONISTA Marketplace</ul>
                 <ul>E-gift cards</ul>
                 <ul>Black Friday</ul>
                 <ul>Refer A Friend</ul>
@@ -335,7 +378,7 @@
 <div style="background-color:#dddddd ;">
     <div id="footer2">
         <div>
-            <p>© 2022 ASOS</p>
+            <p>© 2022 FASHIONISTA</p>
         </div>
         <div style="display:flex; column-gap: 10px;">
             <P>Privacy & Cookies |</P>
@@ -349,3 +392,4 @@
 
 </body>
 </html>
+<script src="product.js"></script>
