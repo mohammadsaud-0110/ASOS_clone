@@ -45,10 +45,13 @@ Join.addEventListener("submit", (e) => {
   let regData = {
     "first-name": `${firstname}`,
     "last-name": `${lastname}`,
-    email: `${email}`,
-    password: `${password}`,
-    gender: `${gender}`,
+    "email": `${email}`,
+    "password": `${password}`,
+    "gender": `${gender}`,
     "d-o-b": `${dateofbirth}`,
+    "cart": [],
+    "history": [],
+    "fav": []
   };
 
   if (regData.password.length < 10) {
@@ -73,8 +76,10 @@ Join.addEventListener("submit", (e) => {
     } else {
       swal("Join Successfull...!", "go to sign in page...!", "success");
       postData(regData);
+      form.reset();
     }
   }
+
 });
 
 // send data to server...
@@ -125,7 +130,8 @@ join.addEventListener("click", () => {
 //------------------- Login User -------------------------//
 
 let SignIn = document.getElementById("form2");
-
+let loginUser = localStorage.getItem("loggedinuser") || ""
+let loginUserId = localStorage.getItem("loggedinuserid") || ""
 SignIn.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -133,20 +139,18 @@ SignIn.addEventListener("submit", (e) => {
   let password = form2.logpass.value;
   //console.log(email,password)
   let flag3 = false;
-  let flag4 = false;
 
   for (let i = 0; i < forCheckData.length; i++) {
-    if (email === forCheckData[i].email) {
+    if (email === forCheckData[i].email && password === forCheckData[i].password) {
       flag3 = true
-    }
-  }
-  for (let i = 0; i < forCheckData.length; i++) {
-    if(password === forCheckData[i].password){
-      flag4 = true
+      loginUser = forCheckData[i]["first-name"] + " " + forCheckData[i]["last-name"]
+      loginUserId = forCheckData[i]["id"]
+      localStorage.setItem("loggedinuser",loginUser)
+      localStorage.setItem("loggedinuseid",loginUserId)
     }
   }
 
-  if(flag3 === true && flag4 === true){
+  if(flag3 === true){
     swal("SigIn Successfull...!", "", "success");
     setTimeout(() => {
       window.location = "index.html";
