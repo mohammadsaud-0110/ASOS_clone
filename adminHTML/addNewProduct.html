@@ -13,9 +13,28 @@
         <a href="/adminHTML/admindashboard.html"><img id="logo" src="/img/adminLogo.png" alt=""></a>
     </div>
     <div class="nav">
-        <a href="/adminHTML/allRegistraion.html"><button>All Registrations</button></a>
+        <a href="/adminHTML/allRegistration.html"><button>All Registrations</button></a>
         <a href="/adminHTML/allproducts.html"><button>All Products</button></a>
         <a href="/adminHTML/addNewProduct.html"><button id="anpbtn">Add New Product</button></a>
+        <a href="/adminHTML/history.html"><button>Purchase History</button></a>
+    </div>
+
+    <div class="form-box">
+        <form>
+            <select name="" id="category" required>
+                <option value="" hidden>Select Category</option>
+                <option value="shoes">Shoes</option>
+                <option value="jeans">Jeans</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <input id="name" type="text" placeholder="Enter Product Name" required>
+            <input id="image" type="url" placeholder="Enter Product Image URL" required>
+            <input id="color" type="text" placeholder="Enter Color" required>
+            <input id="brand" type="text" placeholder="Enter Brand Name" required>
+            <input id="price" type="number" placeholder="Enter Price in $ (Dollar)" required>
+            <input type="submit" value="Add" id="addbtn">
+        </form>
     </div>
 </body>
 </html>
+<script src="/adminJS/addNewProduct.js"></script>

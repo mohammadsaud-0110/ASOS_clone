@@ -34,7 +34,7 @@
     color: white;
     height: 70px;
 }
-#anpbtn{
+#hbtn{
     background-color: white;
     color: rgb(82,80,80);
 }
@@ -42,37 +42,4 @@
 .nav button:hover{
     background-color: white;
     color: rgb(82,80,80);
-}
-
-.form-box{
-    padding-top: 30px;
-    width: 100%;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-form{
-    width: 300px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 30px 20px;
-    box-shadow: rgb(111, 169, 227) 0px 8px 24px;
-}
-input, select{
-    padding: 2px 4px;
-    font-size: 14px;
-}
-#addbtn{
-    border: none;
-    background-color: rgb(16, 165, 165);
-    color: white;
-    font-size: 18px;
-}
-#addbtn:hover{
-    background-color: teal;
 }
