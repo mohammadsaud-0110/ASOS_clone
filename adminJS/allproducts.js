@@ -66,7 +66,7 @@ function displayTable(data,str){
         let td3 = document.createElement("td");
         td3.textContent = ele.brand;
         let td4 = document.createElement("td");
-        td4.textContent = ele.price;
+        td4.textContent = "$ "+ele.price;
         let td5 = document.createElement("td");
         let img = document.createElement("img");
         img.setAttribute("src",`https://${ele.image}`);

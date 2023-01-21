@@ -62,13 +62,32 @@
 
     // localStorage.setItem("shoes",JSON.stringify(alldata));
 
-
-let allapi = JSON.parse(localStorage.getItem("jeans")) || [];
-// fetch("https://fashionista-server.onrender.com/jeans")
-// .then((res)=>{ return res.json(); })
-// .then((data)=>{ console.log(data.length);
-//     allapi = data;
-//     for(let i=0;i<allapi.length;i++){
+let allapi = [];
+// let allapi = JSON.parse(localStorage.getItem("accessories")) || [];
+fetch("https://63cab8b14f53a00420296f33.mockapi.io/accessories")
+.then((res)=>{ return res.json(); })
+.then((data)=>{ console.log(data.length);
+    allapi = data;
+    for(let i=0;i<allapi.length;i++){
+    
+//     // let obj={
+//     //     "name": `${allapi[i].name}`,
+//     //     "image": `${allapi[i].imageUrl}`,
+//     //     "price": +(allapi[i].price.current.value),
+//     //     "color": `${allapi[i].colour}`,
+//     //     "brand": `${allapi[i].brandName}`
+//     // }
+// //     // register(obj);  
+// //     // displayData(obj);
+    console.log(allapi[i]);
+    }
+ });
+// console.log(p)
+// let p1 = await p.then((res)=>{ res.json() });
+// console.log(p1)
+// let x = 4;
+// console.log(allapi.length);
+// for(let i=0;i<allapi.length;i++){
     
 //     let obj={
 //         "name": `${allapi[i].name}`,
@@ -79,28 +98,9 @@ let allapi = JSON.parse(localStorage.getItem("jeans")) || [];
 //     }
 //     // register(obj);  
 //     // displayData(obj);
+//     // console.log(i+1,": ");
 //     console.log(obj);
-//     }
-//  });
-// console.log(p)
-// let p1 = await p.then((res)=>{ res.json() });
-// console.log(p1)
-// let x = 4;
-// console.log(allapi.length);
-for(let i=0;i<allapi.length;i++){
-    
-    let obj={
-        "name": `${allapi[i].name}`,
-        "image": `${allapi[i].imageUrl}`,
-        "price": +(allapi[i].price.current.value),
-        "color": `${allapi[i].colour}`,
-        "brand": `${allapi[i].brandName}`
-    }
-    register(obj);  
-    // displayData(obj);
-    // console.log(i+1,": ");
-    // console.log(obj);
-}
+// }
 // let pobj = {
 //         "name": "Walk London sean chunky chelsea boots in brown leather",
 //         "image": "images.asos-media.com/products/walk-london-sean-chunky-chelsea-boots-in-brown-leather/202728172-1-brown",
@@ -113,23 +113,23 @@ for(let i=0;i<allapi.length;i++){
 // function displayData(obj){
 //     console.log(obj);
 // }
-async function register(obj){
-// function register(obj,x){
-        let res=await fetch(`https://63cab8b14f53a00420296f33.mockapi.io/jeans` ,{
-        method: 'POST',
-        headers:{
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(obj)
-        })
-        .then((res)=>{
-            return res.json()
-        })
-        .then((data)=>{
-            console.log(data)
-        }).catch((err)=>{
-            alert(err)
-        })
-}
+// async function register(obj){
+// // function register(obj,x){
+//         let res=await fetch(`https://63cab8b14f53a00420296f33.mockapi.io/accessories` ,{
+//         method: 'POST',
+//         headers:{
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(obj)
+//         })
+//         .then((res)=>{
+//             return res.json()
+//         })
+//         .then((data)=>{
+//             console.log(data)
+//         }).catch((err)=>{
+//             alert(err)
+//         })
+// }
 
 </script>

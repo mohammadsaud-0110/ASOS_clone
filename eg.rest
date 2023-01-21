@@ -8,14 +8,17 @@ POST  https://63ca4b894f53a00420202b84.mockapi.io/allusers
 Content-Type: application/json
 
   {
-    "first-name": "Md",
-    "last-name": "S",
-    "email": "mds1@gmail.com",
-    "password": "0000",
-    "gender": "Male",
-    "d-o-b": "0-0-0"
+    "first-name": "mo",
+    "last-name": "wo",
+    "email": "meo2@gmail.com",
+    "password": "12345678",
+    "gender": "men",
+    "d-o-b": "2023-01-21",
+    "card": [],
+    "history": []
   }
 
 
 ###
-DELETE  https://63cab8b14f53a00420296f33.mockapi.io/jeans/2
+DELETE https://63ca4b894f53a00420202b84.mockapi.io/allusers/24
+
