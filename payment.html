@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            display: flex;
+            gap: 220px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topimg {
+            width: 100px;
+            height: 40px;
+            margin-bottom: -20px;
+        }
+
+        .mainCart {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            height: auto;
+            width: 100%;
+            /* border: 1px solid green; */
+            background-color: #eeeeee;
+
+
+        }
+
+
+        .cartPrice {
+            /* border: 1px solid rgb(0, 51, 255); */
+            background-color: white;
+            width: 25%;
+            padding-left: 50px;
+            height: 400px;
+
+        }
+        .leftPay {
+            height: auto;
+            width: 60%;
+            padding-bottom: 100px;
+        }
+
+        .payDiv {
+            /* border: 1px solid red; */
+            height: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around
+        }
+
+        .cartBtn {
+            background-color: green;
+            border: none;
+            width: 300px;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .selectCountry {
+            height: 50px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .addDiv {
+            height: 500px;
+            margin-top: 30px;
+            background-color: white;
+            padding-left: 100px;
+            padding-top: 20px;
+
+        }
+
+        .cardDiv {
+            height: 450px;
+            margin-top: 30px;
+            background-color: white;
+            padding-left: 100px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="https://assets.asosservices.com/checkout/2.0.1.8898/images/chrome/asos-logo/asos-logo.svg" alt="">
+        <h1>CHECKOUT</h1>
+        <img class="topimg" src="https://i.ibb.co/YfTDbhc/digiii.png" alt="">
+    </div>
+    <div class="mainCart">
+        <div class="leftPay">
+            <div class="payDiv">
+                <h2>SHIPPING COUNTRY</h2>
+                <select class="selectCountry" id="country">
+                    <option value="AF">Afghanistan</option>
+
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+
+                    <option value="BR">Brazil</option>
+
+                    <option value="CA">Canada</option>
+
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+
+
+                    <option value="DK">Denmark</option>
+
+                    <option value="EG">Egypt</option>
+
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+
+
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+
+
+                    <option value="IS">Iceland</option>
+                    <option value="INDIA">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="JP">Japan</option>
+                    <option value="KR">Korea, Republic of (South Korea)</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MX">Mexico</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russia</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SG">Singapore</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+
+                </select>
+            </div>
+            <div class="payDiv" style="display: block; padding-left: 100px; margin-top: 50px; padding-top: 1px;">
+                <h2>EMAIL ADDRESS</h2>
+                <p>iamdhanashriahire@gmail.com </p>
+            </div>
+            <div class="addDiv">
+                <h2>ADD ADDRESS</h2>
+                <label for="">FIRST NAME : </label> <br> <br>
+                <input type="text"> <br> <br>
+                <label for="">LAST NAME : </label> <br><br>
+                <input type="text"> <br><br>
+                <label for="">MOBILE : </label> <br><br>
+                <input type="text"> <br><br>
+                <label for="">COUNTRY : </label> <br><br>
+                <select class="selectCountry" id="country">
+                    <option value="AF">Afghanistan</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BR">Brazil</option>
+                    <option value="CA">Canada</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="DK">Denmark</option>
+                    <option value="EG">Egypt</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="IS">Iceland</option>
+                    <option value="INDIA">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="JP">Japan</option>
+                    <option value="KR">Korea, Republic of (South Korea)</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MX">Mexico</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russia</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SG">Singapore</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+
+                </select> <br><br>
+                <button class="cartBtn">Submit To this Address</button>
+
+            </div>
+
+            <div class="cardDiv">
+                <h2>PAYMENT OPTION</h2>
+                <label for="">CARD NUMBER : </label> <br> <br>
+                <input type="text"> <br> <br>
+                <label for="">CARD NAME : </label> <br><br>
+                <input type="text"> <br><br>
+                <label for="">PIN : </label> <br><br>
+                <input type="text"> <br><br>
+                <button class="cartBtn">CASH ON DELIVERY</button> <br> <br>
+                <button class="cartBtn">BUY NOW</button>
+            </div>
+        </div>
+
+        
+        <div class="cartPrice">
+            <h2>ITEM</h2>
+            <hr>
+            <div>
+                <h3>SubTotal</h3>
+                <h2>TOTAL TO PAY</h2>
+            </div>
+         
+      
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
