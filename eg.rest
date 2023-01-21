@@ -4,18 +4,11 @@ GET https://63ca4b894f53a00420202b84.mockapi.io/allusers
 
 
 
-POST  https://63ca4b894f53a00420202b84.mockapi.io/allusers
+PUT https://63ca4b894f53a00420202b84.mockapi.io/allusers/28
 Content-Type: application/json
 
   {
-    "first-name": "mo",
-    "last-name": "wo",
-    "email": "meo2@gmail.com",
-    "password": "12345678",
-    "gender": "men",
-    "d-o-b": "2023-01-21",
-    "card": [],
-    "history": []
+    "fav" : []
   }
 
 
