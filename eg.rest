@@ -1,17 +1,25 @@
-GET https://63ca4b894f53a00420202b84.mockapi.io/allusers
+GET https://63ca4b894f53a00420202b84.mockapi.io/allusers/28
 
 ####
 
 
 
-PUT https://63ca4b894f53a00420202b84.mockapi.io/allusers/28
+POST https://63ca4b894f53a00420202b84.mockapi.io/allusers
 Content-Type: application/json
 
   {
-    "fav" : []
-  }
+"first-name": "demo",
+"last-name": "one",
+"email": "one@gmail.com",
+"password": "1234567890",
+"gender": "men",
+"d-o-b": "2023-01-22",
+"cart": [],
+"history": [],
+"fav": []
+}
 
 
 ###
-DELETE https://63ca4b894f53a00420202b84.mockapi.io/allusers/24
+DELETE https://63ca4b894f53a00420202b84.mockapi.io/allusers/26
 

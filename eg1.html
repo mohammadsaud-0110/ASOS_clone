@@ -25,16 +25,23 @@
         </form>
         
     </div>
+    <a href="">Shirt</a>
 </body>
 </html>
 
 <script>
-    let form = document.querySelector("form");
-    form.addEventListener("submit",(event)=>{
-        event.preventDefault();
-        let msg = document.querySelector("#t").value;
-        console.log(msg)
+    let an = document.querySelector("a");
+    an.addEventListener("click",(e)=>{
+        e.preventDefault();
+        console.log(an.text);
     })
+    // console.log(an.text);
+    // let form = document.querySelector("form");
+    // form.addEventListener("submit",(event)=>{
+    //     event.preventDefault();
+    //     let msg = document.querySelector("#t").value;
+    //     console.log(msg)
+    // })
 
 //     const options = {
 // 	method: 'GET',
