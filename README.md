@@ -29,11 +29,7 @@ Greetings from the team,
   
  
 # About the Project:
- Tech Stack : *HTML
-              *CSS
-              *JavaScript
-              *DOM(JavaScript)
-              *Mock Api (+CRUD)
+ Tech Stack : HTML | CSS | JavaScript | DOM(JavaScript) | Mock Api (+CRUD)
               
  Coding Platform: VSCode
  
