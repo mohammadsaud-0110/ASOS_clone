@@ -11,32 +11,29 @@ Greetings from the team,
 
  
 # Functionality
-  .Sorting: .Price: Low to High
-            .Price: High to Low
+  :Sorting: Price: Low to High & High to Low
             ![8](https://user-images.githubusercontent.com/112760057/214032040-9b0f3249-55a7-4feb-b150-8176043a6fb3.png)
 
             
-  .Filter:  .Category
-            .Brand
-            .Color
+  :Filter:  Category, Brand, Color
             ![9](https://user-images.githubusercontent.com/112760057/214032125-0e81b4e7-4fc7-45b7-b65e-708e7d5fd135.png)
 
             
-  .Favorite
+  :Favorite
       ![10](https://user-images.githubusercontent.com/112760057/214032158-791ed72d-772f-4900-9384-3cc2c4e82483.png)
 
-  .Cart
+  Cart
     ![11](https://user-images.githubusercontent.com/112760057/214032215-d09a70d6-86cf-4ea1-b78b-e2fc8b0a3990.png)
 
   
   
  
 # About the Project:
- Tech Stack : .HTML
-              .CSS
-              .JavaScript
-              .DOM(JavaScript)
-              .Mock Api (+CRUD)
+ Tech Stack : *HTML
+              *CSS
+              *JavaScript
+              *DOM(JavaScript)
+              *Mock Api (+CRUD)
               
  Coding Platform: VSCode
  
