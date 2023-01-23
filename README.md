@@ -3,7 +3,7 @@
 Greetings from the team,
   We noticed that you have reached the README file. So we will take you through the documentation of our project.
 # About the website:
- This website is a clone of the original website www.ASOS.com. This is an online store from where a user can purchase different fashionable products of there choice.
+ https://lucky-queijadas-f6b0ce.netlify.app/ Fashionista is a clone of the original website www.ASOS.com. This is an online store from where a user can purchase different fashionable products of there choice.
  The website has a good and easy user interface, to ensure that user have better experience while using the site. The website have different functionality which will
  further help to improve the user experience. This website has two main sections: MEN and WOMEN. The user needs to Register first to use the proper functionality of the   website.
  ![4](https://user-images.githubusercontent.com/112760057/214030990-ccea2146-dd3e-4507-a6f5-2d6dc23c66c7.png)
