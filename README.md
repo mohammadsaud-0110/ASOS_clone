@@ -1,4 +1,4 @@
-# tedious-view-7935
+# ASOS-clone (Fashionista)
 
 Greetings from the team,
   We noticed that you have reached the README file. So we will take you through the documentation of our project.
